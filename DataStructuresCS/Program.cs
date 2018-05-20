@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SingleLinkedList;
 using DoubleLinkedList;
 using Stack.List;
+using Queue.Array;
+using Queue.List;
 
 namespace DataStructuresCS
 {
@@ -25,6 +24,16 @@ namespace DataStructuresCS
 
             // To Evaluate PostFix Expression.
             PostFixCalculator();
+
+            QueueUsingArray<int> queue = new QueueUsingArray<int>();
+            queue.Enqueue(50); queue.Enqueue(60); queue.Enqueue(70); queue.Enqueue(80); queue.Enqueue(90);
+            queue.Dequeue(); queue.Dequeue();
+            queue.Enqueue(50); queue.Enqueue(60); queue.Enqueue(70); queue.Enqueue(80); queue.Enqueue(90);
+            queue.Dequeue(); queue.Dequeue();
+            queue.PrintQueue();
+
+
+
         }
 
         static void PostFixCalculator()

@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="DoubleLinkedList.cs" />
     <Compile Include="DoubleLinkedListNode.cs" />
+    <Compile Include="QueueUsingArray.cs" />
+    <Compile Include="QueueUsingList.cs" />
     <Compile Include="SingleLinkedListNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
