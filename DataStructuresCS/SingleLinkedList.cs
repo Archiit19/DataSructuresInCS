@@ -182,5 +182,18 @@ namespace SingleLinkedList
         }
 
         #endregion
+
+        public void PrintList()
+        {
+            Console.Write("Single Linked List is : ");
+
+            SingleLinkedListNode<T> current = Head;
+            while (current != null)
+            {
+                Console.Write(current.Value + " ->  ");
+                current = current.Next;
+            }
+            Console.WriteLine();
+        }
     }
 }

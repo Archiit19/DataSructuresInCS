@@ -20,7 +20,6 @@ namespace DoubleLinkedList
             DoubleLinkedListNode<T> temp = Head;
             Head = node;
             Head.Next = temp;
-            Count++;
             
             if (Count == 0)
             {
@@ -30,6 +29,7 @@ namespace DoubleLinkedList
             {
                 temp.Previous = Head;
             }
+            Count++;
         }
 
         public void AddLast(T value)
@@ -192,6 +192,17 @@ namespace DoubleLinkedList
 
         #endregion
 
+        public void PrintList()
+        {
+            Console.Write("Double Linked List is : ");
 
+            DoubleLinkedListNode<T> current = Head;
+            while(current!=null)
+            {
+                Console.Write(current.Value + " <->  ");
+                current = current.Next; 
+            }
+            Console.WriteLine();
+        }
     }
 }
