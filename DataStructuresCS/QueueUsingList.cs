@@ -28,6 +28,18 @@ namespace Queue.List
             return value;
         }
 
+        public void PrintQueue()
+        {
+            Console.Write("Queue using Single Linked List is : ");
+
+            SingleLinkedListNode<T> current = _items.Head;
+            while (current != null)
+            {
+                Console.Write( " <- " + current.Value );
+                current = current.Next;
+            }
+            Console.WriteLine();
+        }
         public T Peek()
         {
             if (_items.Count == 0)

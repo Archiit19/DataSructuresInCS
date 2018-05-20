@@ -183,9 +183,9 @@ namespace SingleLinkedList
 
         #endregion
 
-        public void PrintList()
+        public void PrintList(string msg)
         {
-            Console.Write("Single Linked List is : ");
+            Console.Write(msg + "Single Linked List is : ");
 
             SingleLinkedListNode<T> current = Head;
             while (current != null)

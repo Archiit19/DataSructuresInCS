@@ -192,9 +192,9 @@ namespace DoubleLinkedList
 
         #endregion
 
-        public void PrintList()
+        public void PrintList(string msg)
         {
-            Console.Write("Double Linked List is : ");
+            Console.Write(msg + "Double Linked List is : ");
 
             DoubleLinkedListNode<T> current = Head;
             while(current!=null)
